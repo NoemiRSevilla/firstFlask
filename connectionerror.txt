@@ -1,0 +1,12 @@
+    mysql = connectToMySQL('friends2')	
+        Something went wrong (1146, "Table 'friends2.friends' doesn't exist")
+    
+    user='noemi',  # change the user and password as needed
+    password='blah',
+    RuntimeError: cryptography is required for sha256_password or caching_sha2_password
+    
+    except Exception as e:
+        # if the query fails the method will return FALSE
+        print("Something went wrong", e)
+        return False
+    pymysql.err.ProgrammingError: (1146, "Table 'friends2.friends' doesn't exist")
